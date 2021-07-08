@@ -1,0 +1,112 @@
+body{
+    height: 100vh;
+    background: linear-gradient(rgb(226, 76, 226), #1c2b47);
+}
+
+.container{
+    border-radius: 2px;
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px; 
+}
+
+#newtask{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgb(0,0,0,0.3);
+}
+
+#newtask input{
+    position: relative;
+    width: 70%;
+    width: 70%;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    font-weight: 500;
+    position: relative;
+    color: #111111;
+}
+
+#newtask input :focus{
+    outline: none;
+    border-color: #8052ec;
+}
+
+#newtask button{
+    position: relative;
+    float: right;
+    width: 15%;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    background: #8052ec;
+    color: #ffffff;
+}
+
+#tasks {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin-top: 60px;
+    box-shadow: 0 15px 30px rgb(0,0,0,0.3);
+    width: 100%;
+    position: relative;
+}
+
+.task {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+
+.text span{
+    margin-left: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.check{
+    background-color: gray;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete{
+    background-color: #8052ec; 
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.completed{
+    background-color: #8052ec;
+    color: #ffffff;
+}
+
