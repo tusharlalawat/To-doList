@@ -1,15 +1,18 @@
-document.querySelector('#btn').onclick = function () {
-
-    if (document.querySelector('#newtask input').value.length == 0) {
+document.querySelector('#btn').onclick = function () 
+{
+    
+    if (document.querySelector('#newtask input').value.length == 0) 
+    {
         alert("please enter a task");
     }
 
-    else {
+    else 
+    {
         document.querySelector('#tasks').innerHTML
             += `
                 <div class="task">
                     <div>
-                        <button class="check"><i class="fas fa-check-square"></i></button>
+                        <button class="check"><i class="far fa-check-square"></i></button>
                         <span id ="taskname">
                             ${document.querySelector('#newtask input').value}
                         </span>
@@ -21,16 +24,21 @@ document.querySelector('#btn').onclick = function () {
             `;
 
         var current = document.querySelectorAll(".delete");
-        for (var i = 0; i < current.length; i++) {
-            current[i].onclick = function () {
+        for (var i = 0; i < current.length; i++) 
+        {
+            current[i].onclick = function () 
+            {
                 this.parentNode.remove();
             } 
         }
 
-        var taskcompleted = document.querySelectorAll(".check");
-        for (var i = 0; i < taskcompleted.length; i++) {
-            taskcompleted[i].onclick = function () {
-                this.classList.toggle('completed');
+        var taskcompleted = document.querySelectorAll(".task");
+        for (var i = 0; i < taskcompleted.length; i++) 
+        {
+            taskcompleted[i].onclick = function () 
+            {
+                this.querySelector("#taskname").classList.toggle("txt");
+                this.querySelector(".check").classList.toggle("completed");
             }
         }
 
