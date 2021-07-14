@@ -84,8 +84,8 @@ body{
 }
 
 .check{
-    background-color: gray;
-    color: #ffffff;
+    background-color:#ffffff;
+    color: gray;
     height: 100%;
     width: 40px;
     border-radius: 5px;
@@ -106,7 +106,11 @@ body{
 }
 
 .completed{
-    background-color: #8052ec;
-    color: #ffffff;
+    color: green;
+    /* color: #ffffff; */
 }
 
+.txt {
+    text-decoration: line-through;
+    color: gray;
+}
